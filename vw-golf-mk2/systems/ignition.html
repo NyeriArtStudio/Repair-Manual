@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VW Golf MK2 - Ignition System</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Workshop Manuals
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../">VW Golf MK2</a></li>
+      <li><a href="ignition.html" class="active">Ignition</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs">
+    <a href="../../index.html">Home</a> / <a href="../">VW Golf MK2</a> / <span>Ignition System</span>
+  </div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#contact">Contact Breaker</a></li>
+        <li><a href="#tci">Transistorised (TCI-H)</a></li>
+        <li><a href="#fei">Fully Electronic (FEI)</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#testing">Testing</a></li>
+      </ul>
+      <h3>Systems</h3>
+      <ul>
+        <li><a href="engine.html">Engine</a></li>
+        <li><a href="fuel.html">Fuel</a></li>
+        <li><a href="cooling.html">Cooling</a></li>
+        <li><a href="transmission.html">Transmission</a></li>
+        <li><a href="brakes.html">Brakes</a></li>
+        <li><a href="suspension.html">Suspension</a></li>
+        <li><a href="electrical.html">Electrical</a></li>
+        <li><a href="body.html">Body</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Ignition System</h1>
+      <p>Three distinct ignition systems were used on the Golf MK2: contact breaker points (early), transistorised TCI-H (mid), and fully electronic FEI (late 16V). All engines fire 1-3-4-2 with No.1 at the crankshaft pulley end.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">High Voltage Warning</div>
+        <p>Ignition HT voltage can be dangerous, especially to people with heart problems or pacemakers. Do not work on the ignition system with the engine running or ignition switched on.</p>
+      </div>
+
+      <h3>System Identification</h3>
+      <table class="spec-table">
+        <thead><tr><th>System</th><th>Engines</th><th>Year</th><th>Visual ID</th></tr></thead>
+        <tbody>
+          <tr><td>Contact Breaker</td><td>1.05, 1.3, 1.6, 1.8 (pre-July 85)</td><td>1984-1985</td><td>Distributor has points and condenser</td></tr>
+          <tr><td>TCI-H (Transistorised)</td><td>All (post-Sept 85), 1.3 NZ, 1.6 RF, 1.8 GU/RH/PB/PF</td><td>1985-1992</td><td>Distributor has reluctor sensor, separate ignition amp</td></tr>
+          <tr><td>FEI (Fully Electronic)</td><td>1.8 16V (RP) only</td><td>GTi 16V</td><td>Distributor has Hall sensor and vacuum advance, integrated amplifier</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="contact">Contact Breaker System</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Points gap</td><td>0.4 mm (initial setting)</td></tr>
+          <tr><td>Dwell angle (1.05/1.3/1.6L)</td><td>44-50&deg; (50-56%)</td></tr>
+          <tr><td>Dwell wear limit</td><td>42-58&deg; (47-64%)</td></tr>
+          <tr><td>1.05/1.3L timing</td><td>4-6&deg; BTDC at idle</td></tr>
+          <tr><td>1.6/1.8L carb timing</td><td>17-19&deg; BTDC at idle</td></tr>
+          <tr><td>1.8L injection timing</td><td>5-7&deg; BTDC at idle</td></tr>
+          <tr><td>Spark plugs</td><td>Champion N7YCC or N7YC, 0.8 mm gap (0.7 mm optional)</td></tr>
+          <tr><td>HT leads 1.05L</td><td>Champion LS-05 boxed set</td></tr>
+          <tr><td>HT leads 1.3/1.6/1.8L</td><td>Champion LS-07 boxed set</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Points Adjustment Procedure</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Remove distributor cap and rotor arm. Clean contact surfaces with solvent.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Turn engine until points are fully open (heel on cam peak).</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Check gap with feeler gauge: 0.4 mm. Adjust by loosening fixed contact screw and repositioning.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Check dwell angle with dwell meter while cranking: 44-50&deg;. Increase gap to reduce dwell, decrease gap to increase dwell.</p></div></div>
+        <div class="step"><div class="step-number">5</div><div class="step-content"><p>Recheck ignition timing with stroboscopic light after any points adjustment.</p></div></div>
+      </div>
+
+      <h2 id="tci">Transistorised Ignition (TCI-H)</h2>
+      <p>No contact breaker points. A reluctor sensor in the distributor triggers the transistorised amplifier. More reliable and consistent than points.</p>
+      <table class="spec-table">
+        <thead><tr><th>Engine</th><th>Spark Plugs</th><th>Gap</th><th>Ignition Timing</th></tr></thead>
+        <tbody>
+          <tr><td>1.3L (NZ) - TCI-H</td><td>N7BYC or N7YCC</td><td>0.8 mm</td><td>4-6&deg; BTDC at 750-850 rpm, vacuum disconnected</td></tr>
+          <tr><td>1.6L (RF) - TCI-H</td><td>N9BYC4 or N9YCC (green coil), N9YCC (grey coil)</td><td>1.0 / 0.8 mm</td><td>17-19&deg; BTDC at 700-800 rpm, vacuum disconnected</td></tr>
+          <tr><td>1.8L (GU, RH) - TCI-H</td><td>N7BYC or N7YCC</td><td>0.8 mm</td><td>17-19&deg; BTDC at 675-825 rpm, vacuum connected</td></tr>
+          <tr><td>1.8L (RP) - TCI-H</td><td>C6BYC or C6YCC</td><td>0.8 mm</td><td>5-7&deg; BTDC at 950 rpm, vacuum disconnected</td></tr>
+          <tr><td>1.8L (PB, PF) - Digifant</td><td>N7BYC or N7YCC</td><td>0.8 mm</td><td>5-7&deg; BTDC at 2000-2500 rpm, temp sender disconnected</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Important: Coil-Spark Plug Matching</h3>
+      <div class="callout callout-danger">
+        <div class="callout-title">Must Match Coil and Plugs</div>
+        <p>Some models have a modified ignition coil identified by a <strong>grey sticker</strong> (instead of green). This modified coil must be used with single-electrode spark plugs (N9YCC 0.8 mm gap). Do not mix new plugs with old coils or vice versa.</p>
+      </div>
+
+      <h2 id="fei">Fully Electronic Ignition (FEI) - 16V Only</h2>
+      <p>Used on the 1.8L 16V GTi (RP). Hall effect sensor in distributor, vacuum advance/retard unit. Integrated ignition amplifier.</p>
+      <table class="spec-table">
+        <tr><td>Timing</td><td>5-7&deg; BTDC at 950-1050 rpm, vacuum hose connected</td></tr>
+        <tr><td>Spark plugs</td><td>Champion C6BYC or C6YCC, 0.8 mm gap</td></tr>
+        <tr><td>Centrifugal advance</td><td>Check with timing light - mark should move opposite to rotation as revs increase</td></tr>
+        <tr><td>Vacuum advance</td><td>Requires vacuum pump and gauge for accurate check</td></tr>
+      </table>
+
+      <h2 id="components">Key Components</h2>
+
+      <div class="component-card">
+        <h4>Ignition Coil</h4>
+        <p>Located on the left side of the engine bay (when facing front). Green sticker = original type (use with 0.7/0.8 mm gap plugs). Grey sticker = modified type (use with 0.8 mm single-electrode plugs only).</p>
+        <p><strong>Primary resistance:</strong> 0.5-0.8 &Omega;<br>
+        <strong>Secondary resistance:</strong> 3.0-4.0 k&Omega;</p>
+        <p><strong>Test:</strong> Disconnect LT leads. Measure primary between + and - terminals. Measure secondary between + terminal and HT tower. Renew if out of spec.</p>
+        <p><strong>OEM:</strong> Bosch 0 221 122 025<br>
+        <strong>Aftermarket:</strong> Delphi CE20009, NGK U1010</p>
+      </div>
+
+      <div class="component-card">
+        <h4>Distributor</h4>
+        <p>Driven from the end of the camshaft. Contains either contact breaker points (early), reluctor sensor (TCI-H), or Hall sensor (FEI).</p>
+        <p><strong>Test - TCI-H reluctor:</strong> Disconnect 2-pin sensor connector. Measure resistance across sensor terminals: 0.8-1.2 k&Omega;. If open circuit or short, renew distributor.</p>
+        <p><strong>Test - FEI Hall sensor:</strong> With ignition on, check voltage at Hall connector: 0V and 5V (supply). With engine cranking, signal should pulse 0-5V.</p>
+      </div>
+
+      <h2 id="testing">Testing Procedures</h2>
+
+      <h3>Ignition Timing (Stroboscopic Method)</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Run engine to normal operating temperature. Connect timing light and tachometer.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>On carb and K-Jet models: disconnect and plug distributor vacuum hose. On Digifant: disconnect temp sender.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Run at idle speed. Point timing light at crankshaft pulley marks. Check alignment with specification for your engine.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>If adjustment needed: loosen distributor clamp bolt. Rotate distributor body: clockwise retards timing, anti-clockwise advances timing.</p></div></div>
+        <div class="step"><div class="step-number">5</div><div class="step-content"><p>Gradually increase engine speed while observing timing mark. Should move opposite to rotation direction (proving centrifugal advance is working). If not, distributor weights are seized - renew distributor.</p></div></div>
+      </div>
+
+      <h3>Spark Plug Condition Diagnosis</h3>
+      <table class="spec-table">
+        <thead><tr><th>Appearance</th><th>Cause</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>Light brown/tan (normal)</td><td>Correct mixture</td><td>Regap and refit</td></tr>
+          <tr><td>Black, sooty</td><td>Rich mixture, worn rings, choke stuck</td><td>Check fuel system, compression</td></tr>
+          <tr><td>White, blistered</td><td>Lean mixture, timing too advanced, heat range too hot</td><td>Check for air leaks, ignition timing</td></tr>
+          <tr><td>Wet with oil</td><td>Worn rings/guides, over-rich oil mixture</td><td>Compression test, oil consumption check</td></tr>
+          <tr><td>Wet with fuel</td><td>Flooding, no spark, pump diaphragm leak</td><td>Check ignition, fuel pressure</td></tr>
+          <tr><td>Electrode worn/rounded</td><td>Normal wear (approx 20k miles)</td><td>Renew plugs</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info">
+        <div class="callout-title">Ignition Quick Diagnosis</div>
+        <p><strong>No spark at all cylinders:</strong> Check coil, HT lead from coil to distributor, distributor cap, rotor arm, ignition amplifier fuse.<br>
+        <strong>No spark one cylinder:</strong> Swap HT lead/plug with known good cylinder. If follows, plug/lead fault. If stays, distributor cap crack or rotor fault.<br>
+        <strong>Weak spark:</strong> Check coil resistance, condenser (points type), battery voltage (should be 12.4V+), earth connections.<br>
+        <strong>Intermittent misfire:</strong> Check HT leads for tracking (dark lines on insulation), coil tower for corrosion, distributor cap for moisture.</p>
+      </div>
+
+      <div class="footnote">
+        <p>Source: Haynes Manual 1081, Chapters 5A-5C. <span class="supplement">*Spark plug diagnostic data supplemented from Champion technical literature</span></p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Workshop Repair Manual Reference.</p>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
