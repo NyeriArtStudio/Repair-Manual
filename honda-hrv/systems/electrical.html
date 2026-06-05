@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda HR-V - Body Electrical</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Workshop Manuals</a>
+    <ul class="nav-links" id="navLinks"><li><a href="../../index.html">Home</a></li><li><a href="../">Honda HR-V</a></li><li><a href="electrical.html" class="active">Body Electrical</a></li></ul>
+    <div class="nav-controls">
+      <div class="search-box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="searchInput" placeholder="Search..."></div>
+      <button class="theme-toggle" id="themeToggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../">Honda HR-V</a> / <span>Body Electrical</span></div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul><li><a href="#overview">Overview</a></li><li><a href="#fuses">Fuses & Relays</a></li><li><a href="#windows">Power Windows</a></li><li><a href="#locks">Door Locks</a></li><li><a href="#srs">SRS</a></li><li><a href="#immobiliser">Immobiliser</a></li><li><a href="#relay">Relay Notes</a></li></ul>
+      <h3>Systems</h3>
+      <ul><li><a href="engine.html">Engine</a></li><li><a href="fuel.html">Fuel</a></li><li><a href="ignition.html">Ignition</a></li><li><a href="cooling.html">Cooling</a></li><li><a href="transmission.html">Transmission</a></li><li><a href="brakes.html">Brakes</a></li><li><a href="suspension.html">Suspension</a></li></ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Body Electrical</h1>
+      <p>Two fuse/relay boxes: engine compartment (left side) and under-dash (left of steering column). Body electrical controlled by integrated control unit and ECM/PCM.</p>
+
+      <h2 id="fuses">Fuse & Relay Boxes</h2>
+      <p><strong>Under-hood fuse box:</strong> Left side, near battery. Contains high-current fuses for engine, cooling fan, ABS, and main relays.<br>
+      <strong>Under-dash fuse box:</strong> Left of steering column, behind kick panel. Contains body electrics fuses and relays.</p>
+
+      <h3>Key Fuse Locations (Under-dash)</h3>
+      <table class="spec-table">
+        <thead><tr><th>Slot</th><th>Circuit</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Power window ( driver's )</td><td>20A</td></tr>
+          <tr><td>2</td><td>Power window (passenger)</td><td>20A</td></tr>
+          <tr><td>7</td><td>Headlight (low beam L)</td><td>15A</td></tr>
+          <tr><td>8</td><td>Headlight (low beam R)</td><td>15A</td></tr>
+          <tr><td>9</td><td>Headlight (high beam L)</td><td>15A</td></tr>
+          <tr><td>10</td><td>Headlight (high beam R)</td><td>15A</td></tr>
+          <tr><td>13</td><td>Rear defogger</td><td>20A</td></tr>
+          <tr><td>14</td><td>Horn, stop lights</td><td>15A</td></tr>
+          <tr><td>15</td><td>Tail lights</td><td>10A</td></tr>
+          <tr><td>21</td><td>Power door locks</td><td>20A</td></tr>
+          <tr><td>27</td><td>Fuel pump</td><td>15A</td></tr>
+        </tbody>
+      </table>
+      <p><span class="supplement">*Layout varies by model year. Check your vehicle's fuse card.</span></p>
+
+      <h2 id="windows">Power Windows</h2>
+      <p>Electric lift with motor in each door. Driver's switch has master control. Auto-down function on driver's window (KG/KE models).</p>
+      <h3>Window Motor Test</h3>
+      <p>Disconnect motor connector. Apply 12V to terminals (either polarity for direction). If motor doesn't run, replace. If motor runs but window doesn't move: regulator cable broken or guide seized.</p>
+      <h3>Common Faults</h3>
+      <p><strong>Window won't move:</strong> Check fuse first. Test motor direct. If motor OK: switch fault or wiring break in door harness (check rubber boot between door and A-pillar).<br>
+      <strong>Window slow/struggles:</strong> Dry guide rails (lubricate with silicone spray), weak motor, poor earth connection.</p>
+
+      <h2 id="locks">Power Door Locks</h2>
+      <p>Actuator in each door controlled by driver's switch or keyless remote (where fitted). Tailgate lock operates via separate actuator.</p>
+      <p><strong>Test:</strong> Listen for actuator click when locking. If one door doesn't lock: test actuator with 12V direct. If works: wiring or switch fault. If doesn't: actuator failed (common).</p>
+
+      <h2 id="srs">SRS (Supplemental Restraint System)</h2>
+      <p>Dual front airbags (driver and passenger on some models). SRS unit under centre console. Yellow wiring harnesses - do not test with multimeter on resistance (can trigger deployment).</p>
+      <div class="callout callout-danger"><div class="callout-title">SRS Safety Warning</div>
+      <p>Never use a multimeter on resistance mode to test SRS circuits - this can deploy the airbag. Only use a dedicated SRS tester or Honda PGM tester. Disconnect battery and wait 3 minutes before working on SRS components. Store airbag module with trim cover facing up.</p></div>
+
+      <h2 id="immobiliser">Immobiliser System</h2>
+      <p>Honda transponder immobiliser standard on most models. Prevents engine starting without registered key.</p>
+      <table class="spec-table">
+        <thead><tr><th>Component</th><th>Location</th></tr></thead>
+        <tbody>
+          <tr><td>Immobiliser receiver</td><td>Around ignition barrel</td></tr>
+          <tr><td>Immobiliser indicator</td><td>Dashboard (red key symbol)</td></tr>
+          <tr><td>ECU control</td><td>Integrated with PGM-FI ECM</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Symptom:</strong> Engine cranks but won't start, immobiliser light flashing. <strong>Cause:</strong> Unregistered key, faulty transponder in key, receiver fault, or ECM mismatch. <strong>Fix:</strong> Try spare key. If same: requires Honda diagnostic tool to recode or replace receiver and re-register keys.</p>
+
+      <h2 id="relay">Relay Notes - HVAC Blower</h2>
+      <p>The HR-V HVAC blower motor is controlled via a power transistor (not a simple relay). Common failure: transistor overheats, causing blower to work only on high speed or not at all. If blower works on max only: power transistor has failed. Located behind glovebox.</p>
+      <p><strong>Rear defogger relay:</strong> Similar to VW Golf, the rear window defogger can benefit from a relay upgrade if the factory switch gets hot. Add a 30A relay triggered by the existing switch, with a new 4.0 mm&sup2; feed direct from battery via 25A fuse.</p>
+
+      <div class="callout callout-info"><div class="callout-title">Body Electrical Quick Diagnosis</div>
+      <p><strong>Multiple circuits dead:</strong> Check under-dash fuse box for corroded fuse clips (common in humid climates).<br>
+      <strong>Intermittent electrics:</strong> Check door harness rubber boots for broken wires.<br>
+      <strong>Battery drains overnight:</strong> Check parasitic drain (should be under 50mA). Pull fuses one by one to find circuit.<br>
+      <strong>Immobiliser light flashing, no start:</strong> Try spare key. If same: needs Honda diagnostic.</p></div>
+
+      <div class="footnote"><p>Source: Honda HR-V Shop Manual, Chapter 23 (Body Electrical). <span class="supplement">*Relay recommendations from automotive electrical best practices</span></p></div>
+    </main>
+  </div>
+  <footer class="footer"><p>&copy; Workshop Repair Manual Reference.</p></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
