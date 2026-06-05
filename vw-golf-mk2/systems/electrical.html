@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VW Golf MK2 - Electrical System</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Workshop Manuals</a>
+    <ul class="nav-links" id="navLinks"><li><a href="../../index.html">Home</a></li><li><a href="../">VW Golf MK2</a></li><li><a href="electrical.html" class="active">Electrical</a></li></ul>
+    <div class="nav-controls">
+      <div class="search-box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="searchInput" placeholder="Search..."></div>
+      <button class="theme-toggle" id="themeToggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../">VW Golf MK2</a> / <span>Electrical System</span></div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul><li><a href="#overview">Overview</a></li><li><a href="#battery">Battery</a></li><li><a href="#alternator">Alternator</a></li><li><a href="#starter">Starter Motor</a></li><li><a href="#lighting">Lighting</a></li><li><a href="#fuses">Fuses & Relays</a></li><li><a href="#relay">Relay Upgrades</a></li><li><a href="#testing">Testing</a></li></ul>
+      <h3>Systems</h3>
+      <ul><li><a href="engine.html">Engine</a></li><li><a href="fuel.html">Fuel</a></li><li><a href="ignition.html">Ignition</a></li><li><a href="cooling.html">Cooling</a></li><li><a href="transmission.html">Transmission</a></li><li><a href="brakes.html">Brakes</a></li><li><a href="suspension.html">Suspension</a></li><li><a href="body.html">Body</a></li></ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Electrical System</h1>
+      <p>12V negative earth system. Main fuse box behind cover on right side of dashboard. Relay panel above fuse box. Battery on left side of engine compartment. Alternator standard on all models (no dynamo).</p>
+
+      <h2 id="battery">Battery</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Voltage</td><td>12V</td></tr>
+          <tr><td>Capacity (standard)</td><td>45-63 Ah (varies by spec)</td></tr>
+          <tr><td>Type</td><td>Maintenance-free (sealed) from factory</td></tr>
+          <tr><td>Location</td><td>Left side engine compartment</td></tr>
+          <tr><td>Earth</td><td>Negative to body</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Check:</strong> Terminals clean and tight, case not cracked. Check electrolyte level (if accessible) between MIN/MAX marks. Top up with distilled water only. Apply petroleum jelly to terminals after reconnecting.</p>
+
+      <h2 id="alternator">Alternator</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Type</td><td>Bosch 55A or 90A (depending on spec)</td></tr>
+          <tr><td>Drive</td><td>V-belt from crankshaft</td></tr>
+          <tr><td>New belt deflection</td><td>2.0 mm (midpoint)</td></tr>
+          <tr><td>Run-in belt deflection</td><td>5.0 mm (midpoint)</td></tr>
+          <tr><td>Rack-type adjuster (post-1985)</td><td>8-10 Nm torque on adjuster bolt</td></tr>
+          <tr><td>Mounting bolts</td><td>45 Nm (main), 25 Nm (adjuster)</td></tr>
+        </tbody>
+      </table>
+      <h3>Alternator Test</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Check drivebelt tension and condition. Replace if glazed or cracked.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>With engine running at 2000 rpm, battery voltage should be 13.5-14.5V at terminals.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Turn on headlights and heater fan. Voltage should remain above 13.0V. If drops below, alternator or regulator fault.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Check charge warning light: should illuminate with ignition on, go out when engine starts.</p></div></div>
+      </div>
+
+      <h2 id="starter">Starter Motor</h2>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Bosch pre-engaged, 12V 0.9-1.2 kW</td></tr>
+        <tr><td>Location</td><td>Rear of engine, below inlet manifold</td></tr>
+        <tr><td>Mounting bolts</td><td>M10, 45 Nm</td></tr>
+      </table>
+      <h3>Starter Testing</h3>
+      <p><strong>Solenoid click but no crank:</strong> Check battery voltage (should be 12.4V+), check main cable and earth connections, check solenoid trigger wire.<br>
+      <strong>Slow crank:</strong> Battery low, poor earth connection, worn starter brushes, or engine tight.<br>
+      <strong>No click:</strong> Check fuse, ignition switch, inhibitor switch (auto), clutch switch (manual).</p>
+
+      <h2 id="lighting">Lighting System</h2>
+      <table class="spec-table">
+        <thead><tr><th>Bulb</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td>Headlight (outer, dipped)</td><td>H4 60/55W</td></tr>
+          <tr><td>Headlight (inner, main - twin)</td><td>H1 55W</td></tr>
+          <tr><td>Side light</td><td>W5W 5W</td></tr>
+          <tr><td>Indicator front</td><td>PY21W 21W (amber)</td></tr>
+          <tr><td>Tail light</td><td>P21/5W 21/5W</td></tr>
+          <tr><td>Brake light</td><td>Shared with tail (21W filament)</td></tr>
+          <tr><td>Reverse light</td><td>P21W 21W</td></tr>
+          <tr><td>Number plate</td><td>W5W 5W</td></tr>
+          <tr><td>Interior light</td><td>C5W 5W festoon</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="fuses">Fuses & Relays</h2>
+      <p>Fuse box behind removable cover on right side of dashboard, visible when driver's door is open. Relays located above fuse box on a panel.</p>
+      <div class="callout callout-info"><div class="callout-title">Fuse Box Layout (Typical)</div>
+      <p>Slot 1: 10A Indicator, rev light<br>Slot 2: 10A dipped beam L<br>Slot 3: 10A dipped beam R<br>Slot 4: 10A main beam L<br>Slot 5: 10A main beam R<br>Slot 6: 10A Tail L, number plate, instruments<br>Slot 7: 10A Tail R, fog rear<br>Slot 8: 15A Horn, brake lights<br>Slot 9: 15A Interior light, cigar lighter, clock<br>Slot 10: 15A Washer/wiper, rear wiper<br>Slot 11: 15A Heated rear window, heated mirrors<br>Slot 12: 15A Fresh air blower<br>Slot 13: spare<br>Slot 14-17: various options</p>
+      <p><span class="supplement">*Varies by year and options. Always check your vehicle's fuse card.</span></p>
+      </div>
+
+      <h2 id="relay">&#x26A1; Relay Addition Recommendations</h2>
+      <p>The VW Golf MK2 factory wiring routes high current directly through dashboard switches. This causes contact arcing, melting, and fire risk. Adding relays extends switch life and improves reliability.</p>
+
+      <div class="relay-callout">
+        <h5>Headlight Main Beam Relay (Recommended for ALL models)</h5>
+        <p><strong>Problem:</strong> Main beam current (approx 10A per lamp) flows through the steering column combination switch. Contacts arc and overheat, melting the switch and potentially causing fire.</p>
+        <p><strong>Solution:</strong> Add relay so switch carries only relay coil current (approx 150mA).</p>
+        <div class="relay-diagram">
+          <strong>Relay:</strong> Bosch 0 332 019 150 (30A) or equivalent 4-pin<br>
+          <strong>Fuse:</strong> 15A in-line on new power feed<br>
+          <strong>Wire:</strong> 2.5 mm&sup2; for power feed and load<br>
+          <br>
+          Pin 30: Fused +12V direct from battery (2.5 mm&sup2; red wire + 15A fuse)<br>
+          Pin 87: To main beam bulbs (existing wire from combination switch output)<br>
+          Pin 85: Chassis earth (1.0 mm&sup2; brown wire)<br>
+          Pin 86: From combination switch main beam output (existing blue/white wire)<br>
+          <br>
+          Mount relay near radiator support or battery. The combination switch now energises relay coil only. All headlight current flows via relay contacts direct from battery.
+        </div>
+        <p><strong>Result:</strong> Brighter headlights (full battery voltage at lamps), switch contacts protected, reduced fire risk.</p>
+      </div>
+
+      <div class="relay-callout">
+        <h5>Rear Heated Screen Relay</h5>
+        <p><strong>Problem:</strong> Rear screen heater draws 15-20A. Factory wiring uses dashboard switch rated for only 10A continuous. Switch contacts overheat.</p>
+        <p><strong>Solution:</strong> Add 30A relay. Wire gauge: 4.0 mm&sup2; for heater feed (high current).</p>
+        <div class="relay-diagram">
+          Pin 30: Fused +12V from battery (4.0 mm&sup2; + 25A fuse)<br>
+          Pin 87: To rear screen heater element<br>
+          Pin 85: Chassis earth<br>
+          Pin 86: From existing heated screen switch output
+        </div>
+      </div>
+
+      <div class="relay-callout">
+        <h5>Fan Blower Motor Relay (Optional)</h5>
+        <p><strong>Problem:</strong> Heater blower on highest speed draws 15A+. Speed resistor gets very hot. If resistor fails open, full current can bypass through switch.</p>
+        <p><strong>Solution:</strong> If blower speed resistor has failed more than once, add relay for max speed circuit.</p>
+        <div class="relay-diagram">
+          Pin 30: Fused +12V (4.0 mm&sup2; + 20A fuse)<br>
+          Pin 87: Direct to blower motor (bypass resistor for max speed)<br>
+          Pin 85: Chassis earth<br>
+          Pin 86: From speed switch "max" position
+        </div>
+      </div>
+
+      <h2 id="testing">Electrical Testing</h2>
+      <h3>Continuity Test</h3>
+      <p>Use multimeter on ohms/beep range. Disconnect battery first when testing continuity. Zero reading or beep = good connection. Infinite reading = open circuit.</p>
+      <h3>Voltage Drop Test</h3>
+      <p>Set multimeter to DC volts. Connect between battery negative and component earth point. With component operating, reading should be less than 0.5V. Higher reading indicates poor earth connection.</p>
+      <h3>Current Draw Test</h3>
+      <p>Set multimeter to DC amps (10A range). Connect in series with battery negative cable. With everything off and doors closed: should be less than 50mA (parasitic drain). If higher, remove fuses one at a time to find offending circuit.</p>
+
+      <div class="callout callout-info"><div class="callout-title">Electrical Quick Diagnosis</div>
+      <p><strong>Total electrical failure:</strong> Check battery connections, main fuse, battery earth strap to body/chassis.<br>
+      <strong>One circuit dead:</strong> Check fuse (visual + meter), check relay, check earth point for that circuit.<br>
+      <strong>Dim lights:</strong> Poor earth, low battery, high resistance in old wiring, alternator fault.<br>
+      <strong>Intermittent faults:</strong> Look for corroded multi-pin connectors, chafed wires at hinges (doors, tailgate), loose fuse contacts.</p></div>
+
+      <div class="footnote"><p>Source: Haynes Manual 1081, Chapters 5D & 12. <span class="supplement">*Relay recommendations supplemented from automotive electrical best practices and known VW failure data</span></p></div>
+    </main>
+  </div>
+  <footer class="footer"><p>&copy; Workshop Repair Manual Reference.</p></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
