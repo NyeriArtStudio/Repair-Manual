@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VW Golf MK2 - Fuel System</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Workshop Manuals
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../">VW Golf MK2</a></li>
+      <li><a href="fuel.html" class="active">Fuel System</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs">
+    <a href="../../index.html">Home</a> / <a href="../">VW Golf MK2</a> / <span>Fuel System</span>
+  </div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#carb">Carburettor Models</a></li>
+        <li><a href="#kjet">K-Jetronic</a></li>
+        <li><a href="#digijet">Digijet</a></li>
+        <li><a href="#digifant">Digifant</a></li>
+        <li><a href="#monojet">Mono-Jetronic</a></li>
+        <li><a href="#pump">Fuel Pump</a></li>
+        <li><a href="#filter">Fuel Filter</a></li>
+        <li><a href="#testing">Testing</a></li>
+      </ul>
+      <h3>Systems</h3>
+      <ul>
+        <li><a href="engine.html">Engine</a></li>
+        <li><a href="ignition.html">Ignition</a></li>
+        <li><a href="cooling.html">Cooling</a></li>
+        <li><a href="transmission.html">Transmission</a></li>
+        <li><a href="brakes.html">Brakes</a></li>
+        <li><a href="suspension.html">Suspension</a></li>
+        <li><a href="electrical.html">Electrical</a></li>
+        <li><a href="body.html">Body</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Fuel System</h1>
+      <p>The VW Golf MK2 was fitted with multiple fuel system types depending on engine, year, and market. Correct identification is essential before ordering parts or performing diagnostics.</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-title">Fuel System Safety</div>
+        <p>Fuel is highly flammable. Always disconnect the battery earth lead before working on the fuel system. Work in a well-ventilated area. Do not smoke or use naked flames. Relieve fuel pressure before disconnecting any lines.</p>
+      </div>
+
+      <h3>System Identification Guide</h3>
+      <table class="spec-table">
+        <thead><tr><th>Engine</th><th>Year</th><th>System</th><th>Key Visual ID</th></tr></thead>
+        <tbody>
+          <tr><td>1.05L</td><td>All</td><td>Pierburg/Solex 31 PIC-7 or 1B3 / Weber 32 TLA</td><td>Single-barrel carb, manual choke</td></tr>
+          <tr><td>1.3L</td><td>All</td><td>Pierburg/Solex 2E3</td><td>Two-barrel progressive carb</td></tr>
+          <tr><td>1.6L (EZ)</td><td>Early</td><td>Pierburg/Solex 2E2</td><td>Two-barrel carb, 900-1000 rpm idle</td></tr>
+          <tr><td>1.6L (RF)</td><td>Late</td><td>Pierburg/Solex 2E2</td><td>Two-barrel carb, 700-800 rpm idle</td></tr>
+          <tr><td>1.8L 8V</td><td>Early</td><td>K-Jetronic (CIS)</td><td>Fuel distributor on top of airflow sensor, no injectors visible</td></tr>
+          <tr><td>1.8L 8V</td><td>Mid</td><td>Digijet</td><td>Control unit on airflow meter, 2-pin injectors</td></tr>
+          <tr><td>1.8L 8V</td><td>Late</td><td>Digifant</td><td>Separate ECU (black box), multi-pin injectors</td></tr>
+          <tr><td>1.8L 16V</td><td>All</td><td>K-Jetronic (KE-Jetronic)</td><td>Fuel distributor with EHA valve, differential pressure valve</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="carb">Carburettor Models</h2>
+      <h3>Pierburg/Solex 2E2 (1.6 &amp; 1.8L)</h3>
+      <p>Two-stage downdraught carburettor with automatic choke and idle cut-off solenoid. The 2E2 on the 1.8L engine has a larger venturi than the 1.6 version.</p>
+      <table class="spec-table">
+        <thead><tr><th>Setting</th><th>1.6 (EZ)</th><th>1.6 (RF)</th><th>1.8</th></tr></thead>
+        <tbody>
+          <tr><td>Idle speed</td><td>900-1000 rpm</td><td>700-800 rpm</td><td>900-1000 rpm</td></tr>
+          <tr><td>CO content</td><td>0.5-1.5%</td><td>1.0-1.5%</td><td>0.5-1.5%</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Carburettor Idle Adjustment Procedure</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Run engine to normal temperature. Connect tachometer and CO meter.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Check ignition timing is correct (see Ignition System).</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Adjust idle speed screw to specified rpm.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Adjust mixture screw (CO) to achieve specified CO content. Turning clockwise weakens mixture.</p></div></div>
+        <div class="step"><div class="step-number">5</div><div class="step-content"><p>Recheck idle speed after CO adjustment - readjust if necessary.</p></div></div>
+      </div>
+
+      <h2 id="kjet">K-Jetronic Fuel Injection (CIS)</h2>
+      <p>Continuous Injection System - mechanically controlled, fuel pressure-dependent injection. No electronic control unit (except Lambda regulation on catalytic converter models). Used on 1.8L 8V early and all 16V engines.</p>
+
+      <div class="component-card">
+        <h4>Fuel Distributor</h4>
+        <p>Mounted on top of the airflow sensor. Distributes fuel to injectors via individual control plunger valves. The plunger position is controlled by airflow sensor plate position.</p>
+        <p><strong>Location:</strong> Left side of engine bay, air cleaner housing mounted on top.<br>
+        <strong>System pressure:</strong> 5.0-5.4 bar<br>
+        <strong>Differential pressure:</strong> Maintained constant by pressure regulator (0.4-0.8 bar above intake manifold pressure)</p>
+        <p><strong>Testing:</strong> Connect fuel pressure gauge to test port. Cranking pressure should be 4.5-5.5 bar. If low, suspect fuel pump, filter, or pressure regulator.</p>
+      </div>
+
+      <div class="component-card">
+        <h4>Warm-Up Regulator (WUR)</h4>
+        <p>Controls control pressure (which enriches mixture when cold by allowing more fuel through the plunger). Heated by engine coolant and electrically.</p>
+        <p><strong>Location:</strong> Bolted to inlet manifold, coolant hoses connected.<br>
+        <strong>Test:</strong> Control pressure cold: 1.1-2.1 bar. Control pressure warm: 2.9-4.2 bar. If out of spec, renew WUR.</p>
+      </div>
+
+      <div class="component-card">
+        <h4>KE-Jetronic (16V only)</h4>
+        <p>Electronically enhanced K-Jetronic with Electro-Hydraulic Actuator (EHA) on the fuel distributor. The EHA varies differential pressure based on Lambda sensor signal, coolant temp, and throttle position.</p>
+        <p><strong>EHA Test:</strong> With ignition on, engine off, EHA current should be approximately 0-10 mA. At idle warm: 0 +/- 2 mA. If current is pegged at +10 or -10 mA, system is at correction limit - check Lambda sensor and air leaks.</p>
+      </div>
+
+      <h2 id="digijet">Digijet Fuel Injection</h2>
+      <p>Electronic fuel injection system used on mid-production 1.8L 8V engines. Throttle body injection with two injectors firing alternately. Replaced by Digifant in 1987.</p>
+      <table class="spec-table">
+        <tr><td>Fuel pressure</td><td>2.5-3.0 bar (regulated at pump)</td></tr>
+        <tr><td>Idle speed (pre-July 1989)</td><td>750-850 rpm</td></tr>
+        <tr><td>Idle speed (July 1989+)</td><td>880-980 rpm</td></tr>
+        <tr><td>CO content</td><td>0.3-1.1% (pre-July 1989), 0.3-1.5% (July 1989+)</td></tr>
+      </table>
+
+      <h2 id="digifant">Digifant Fuel Injection</h2>
+      <p>Bosch Digifant - fully electronic multi-point fuel injection with hot-film air mass sensor. Used on late 1.8L 8V engines. Separate ECU mounted behind glovebox or under passenger seat.</p>
+      <table class="spec-table">
+        <tr><td>Idle speed</td><td>750-850 rpm (not adjustable)</td></tr>
+        <tr><td>Fuel pressure</td><td>2.5 bar (regulated at fuel rail)</td></tr>
+        <tr><td>CO content</td><td>0.5-1.5%</td></tr>
+        <tr><td>Ignition timing</td><td>5-7&deg; BTDC at 2000-2500 rpm, temp sender disconnected</td></tr>
+      </table>
+
+      <h2 id="monojet">Mono-Jetronic</h2>
+      <p>Single-point electronic fuel injection used on some markets. Single throttle body injector. Idle speed and mixture controlled by ECU - not adjustable.</p>
+      <table class="spec-table">
+        <tr><td>Idle speed</td><td>750-950 rpm (not adjustable)</td></tr>
+        <tr><td>CO content</td><td>0.2-1.2%</td></tr>
+      </table>
+
+      <h2 id="pump">Fuel Pump &amp; Delivery</h2>
+      <div class="component-card">
+        <h4>Electric Fuel Pump</h4>
+        <p>Electric pump located under the vehicle near the fuel tank (injected models). Carburettor models use a mechanical pump on the engine.</p>
+        <table class="spec-table">
+          <tr><td>Fuel injected system pressure</td><td>2.5-5.5 bar (varies by system)</td></tr>
+          <tr><td>Delivery rate</td><td>Minimum 1.0 L/min</td></tr>
+          <tr><td>Electrical</td><td>12V, 3-5A running current</td></tr>
+        </table>
+        <p><strong>Test:</strong> Disconnect fuel line at fuel distributor/rail. Connect hose to container. Jumper fuel pump relay terminals 30 and 87 (bypassing ECU). Pump should deliver 1.0 L/min minimum. If noisy or weak, renew.</p>
+        <p><strong>OEM:</strong> Bosch 0 580 464 070<br>
+        <strong>Aftermarket:</strong> Delphi FE0484, VDO 228-225-007-001Z</p>
+      </div>
+
+      <h2 id="filter">Fuel Filter</h2>
+      <table class="spec-table">
+        <thead><tr><th>Engine</th><th>Filter Type</th><th>Champion</th></tr></thead>
+        <tbody>
+          <tr><td>Carburettor (all)</td><td>In-line paper</td><td>L104</td></tr>
+          <tr><td>K-Jetronic 16V (Golf)</td><td>Banjo fitting, metal can</td><td>L203</td></tr>
+          <tr><td>K-Jetronic (Jetta / other)</td><td>Banjo fitting, metal can</td><td>L206</td></tr>
+          <tr><td>Other injection (all)</td><td>In-line EFI</td><td>L204</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Replacement interval:</strong> Every 20,000 miles. Always use new copper washers on banjo fittings.</p>
+
+      <h2 id="testing">Fuel Pressure Testing</h2>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Relieve fuel pressure: remove fuel pump fuse/relay and crank engine until it stalls.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Connect fuel pressure gauge to test port or Schrader valve on fuel rail.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Reconnect pump fuse. Turn ignition on (do not start). Read static pressure.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Start engine. At idle, pressure should be at system specification for your fuel system type.</p></div></div>
+        <div class="step"><div class="step-number">5</div><div class="step-content"><p>Disconnect vacuum hose from pressure regulator (if fitted). Pressure should rise by 0.3-0.5 bar.</p></div></div>
+      </div>
+
+      <h3>Air Filter Elements</h3>
+      <table class="spec-table">
+        <thead><tr><th>Engine</th><th>Champion</th></tr></thead>
+        <tbody>
+          <tr><td>1.05L carb</td><td>W101</td></tr>
+          <tr><td>1.3L carb</td><td>W102</td></tr>
+          <tr><td>1.6 &amp; 1.8L carb</td><td>U508</td></tr>
+          <tr><td>1.8L K-Jet 16V (Golf)</td><td>U502</td></tr>
+          <tr><td>1.8L K-Jet (Jetta)</td><td>U502</td></tr>
+          <tr><td>1.8L GTi (RP) engine</td><td>U572</td></tr>
+          <tr><td>1.8L other injection</td><td>U506</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info">
+        <div class="callout-title">Fuel System Quick Diagnosis</div>
+        <p><strong>No start (injected):</strong> Check pump operation (listen at tank when ignition on), check fuel pressure, check injectors clicking (stethoscope), check fuel pump relay and fuse.<br>
+        <strong>Hard start when cold:</strong> Check warm-up regulator (K-Jet), coolant temp sensor (Digifant/Digijet), choke (carb).<br>
+        <strong>Running rich:</strong> Check CO setting (carb), warm-up regulator stuck cold (K-Jet), Lambda sensor (Digifant), air filter clogged.<br>
+        <strong>Running lean:</strong> Check for air leaks, fuel filter, fuel pressure low, injectors dirty.</p>
+      </div>
+
+      <div class="footnote">
+        <p>Source: Haynes Manual 1081, Chapters 4A-4F. <span class="supplement">*Fuel pressure values supplemented from Bosch technical data</span></p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Workshop Repair Manual Reference.</p>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
