@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VW Golf MK2 - Engine Mechanical</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Workshop Manuals
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../">VW Golf MK2</a></li>
+      <li><a href="engine.html" class="active">Engine</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs">
+    <a href="../../index.html">Home</a> / <a href="../">VW Golf MK2</a> / <span>Engine Mechanical</span>
+  </div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#timing">Timing Belt</a></li>
+        <li><a href="#head">Cylinder Head</a></li>
+        <li><a href="#pistons">Pistons &amp; Rods</a></li>
+        <li><a href="#crank">Crankshaft</a></li>
+        <li><a href="#lubrication">Lubrication</a></li>
+        <li><a href="#testing">Testing Procedures</a></li>
+        <li><a href="#torque">Torque Settings</a></li>
+      </ul>
+      <h3>Systems</h3>
+      <ul>
+        <li><a href="fuel.html">Fuel System</a></li>
+        <li><a href="ignition.html">Ignition System</a></li>
+        <li><a href="cooling.html">Cooling &amp; HVAC</a></li>
+        <li><a href="transmission.html">Transmission</a></li>
+        <li><a href="brakes.html">Brakes</a></li>
+        <li><a href="suspension.html">Suspension</a></li>
+        <li><a href="electrical.html">Electrical</a></li>
+        <li><a href="body.html">Body</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Engine Mechanical</h1>
+      <p>All VW Golf MK2 engines are four-cylinder, in-line, water-cooled, overhead camshaft units mounted transversely at the front. The camshaft is driven by a toothed belt which also drives the coolant pump. This section covers all engines from 1.05L to 1.8L 16V.</p>
+
+      <div class="year-tabs">
+        <button class="year-tab active" data-target="pre85">Pre-Aug 1985 (1.05 &amp; 1.3L)</button>
+        <button class="year-tab" data-target="post85">Post-Aug 1985 (1.05 &amp; 1.3L)</button>
+        <button class="year-tab" data-target="16-18v">1.6 &amp; 1.8L 8V</button>
+        <button class="year-tab" data-target="16v">1.8L 16V (GTi)</button>
+      </div>
+
+      <!-- PRE-AUG 1985 PANEL -->
+      <div class="year-panel active" data-panel="pre85">
+        <h2 id="specs">1.05 &amp; 1.3 Litre Pre-August 1985</h2>
+        <p>Rocker-finger type valve gear with adjustable clearances. The distributor is driven directly from the camshaft.</p>
+
+        <h3>General Specifications</h3>
+        <table class="spec-table">
+          <tr><td>Type</td><td>Four-cylinder in-line, water cooled, overhead camshaft</td></tr>
+          <tr><td>Engine code 1.05L</td><td>GN</td></tr>
+          <tr><td>Engine code 1.3L</td><td>HK</td></tr>
+          <tr><td>Firing order</td><td>1-3-4-2 (No.1 at camshaft sprocket end)</td></tr>
+          <tr><td>1.05L displacement</td><td>1043 cc</td></tr>
+          <tr><td>1.3L displacement</td><td>1272 cc</td></tr>
+          <tr><td>Bore (both)</td><td>75.0 mm</td></tr>
+          <tr><td>1.05L stroke</td><td>59.0 mm</td></tr>
+          <tr><td>1.3L stroke</td><td>72.0 mm</td></tr>
+          <tr><td>Compression ratio (both)</td><td>9.5:1</td></tr>
+          <tr><td>Compression pressure (new)</td><td>8 to 10 bar</td></tr>
+          <tr><td>Compression pressure (min)</td><td>7.0 bar</td></tr>
+          <tr><td>Max cylinder difference</td><td>3.0 bar</td></tr>
+        </table>
+
+        <h3>Valve Clearances (Adjustable - Rocker Fingers)</h3>
+        <table class="spec-table">
+          <thead><tr><th>Condition</th><th>Inlet</th><th>Exhaust</th></tr></thead>
+          <tbody>
+            <tr><td>Warm</td><td>0.15 to 0.20 mm</td><td>0.25 to 0.30 mm</td></tr>
+            <tr><td>Cold</td><td>0.10 to 0.15 mm</td><td>0.20 to 0.25 mm</td></tr>
+          </tbody>
+        </table>
+
+        <h3>1.05L Valve Timing</h3>
+        <table class="spec-table">
+          <tr><td>Inlet opens</td><td>9&deg; ATDC</td></tr>
+          <tr><td>Inlet closes</td><td>13&deg; ABDC</td></tr>
+          <tr><td>Exhaust opens</td><td>15&deg; BBDC</td></tr>
+          <tr><td>Exhaust closes</td><td>11&deg; BTDC</td></tr>
+        </table>
+
+        <h3>1.3L Valve Timing</h3>
+        <table class="spec-table">
+          <tr><td>Inlet opens</td><td>3&deg; BTDC</td></tr>
+          <tr><td>Inlet closes</td><td>38&deg; ABDC</td></tr>
+          <tr><td>Exhaust opens</td><td>41&deg; BBDC</td></tr>
+          <tr><td>Exhaust closes</td><td>3&deg; BTDC</td></tr>
+        </table>
+      </div>
+
+      <!-- POST-AUG 1985 PANEL -->
+      <div class="year-panel" data-panel="post85">
+        <h2>1.05 &amp; 1.3 Litre Post-August 1985</h2>
+        <p>Hydraulic tappets (bucket type) - self-adjusting, no routine valve clearance check required. Maximum permissible hydraulic tappet free travel: <strong>0.1 mm</strong>.</p>
+        <p>All other specifications identical to pre-August 1985 models except valve clearances are not adjustable.</p>
+        <div class="callout callout-info">
+          <div class="callout-title">Hydraulic Tappet Note</div>
+          <p>If valve train noise is excessive, check oil pressure first. Low oil pressure (below 2.0 bar at 2000 rpm) will cause tappet noise. Do not use engine flush products - these can clog the small oil passages in the tappets.</p>
+        </div>
+      </div>
+
+      <!-- 1.6 & 1.8 8V PANEL -->
+      <div class="year-panel" data-panel="16-18v">
+        <h2>1.6 &amp; 1.8 Litre 8-Valve</h2>
+        <p>All 1.6 and 1.8 litre engines use hydraulic bucket tappets. Valve clearances are not adjustable on routine basis.</p>
+
+        <h3>1.6L Specifications</h3>
+        <table class="spec-table">
+          <tr><td>Engine codes</td><td>EZ (early carb), RF (late carb)</td></tr>
+          <tr><td>Displacement</td><td>1595 cc</td></tr>
+          <tr><td>Bore x Stroke</td><td>81.0 x 77.4 mm</td></tr>
+          <tr><td>Compression ratio</td><td>9.0:1</td></tr>
+          <tr><td>Idle speed (EZ)</td><td>900-1000 rpm</td></tr>
+          <tr><td>Idle speed (RF)</td><td>700-800 rpm</td></tr>
+        </table>
+
+        <h3>1.8L Specifications</h3>
+        <table class="spec-table">
+          <tr><td>Engine codes</td><td>PB, PF, GU, RH</td></tr>
+          <tr><td>Displacement</td><td>1781 cc</td></tr>
+          <tr><td>Bore x Stroke</td><td>81.0 x 86.4 mm</td></tr>
+          <tr><td>Compression ratio</td><td>10.0:1 (8V)</td></tr>
+          <tr><td>Idle speed (K-Jetronic pre-Sept 84)</td><td>900-1000 rpm</td></tr>
+          <tr><td>Idle speed (K-Jetronic post-Sept 84)</td><td>800-1000 rpm</td></tr>
+          <tr><td>Idle speed (AC models)</td><td>850-1000 rpm</td></tr>
+        </table>
+      </div>
+
+      <!-- 16V PANEL -->
+      <div class="year-panel" data-panel="16v">
+        <h2>1.8 Litre 16-Valve (GTi)</h2>
+        <p>Double overhead camshaft (DOHC) with hydraulic tappets. Code RP. This is the performance engine used in the Golf GTi 16V.</p>
+
+        <table class="spec-table">
+          <tr><td>Engine code</td><td>RP</td></tr>
+          <tr><td>Displacement</td><td>1781 cc</td></tr>
+          <tr><td>Bore x Stroke</td><td>81.0 x 86.4 mm</td></tr>
+          <tr><td>Compression ratio</td><td>10.0:1</td></tr>
+          <tr><td>Idle speed</td><td>900-1000 rpm</td></tr>
+          <tr><td>Ignition timing (FEI)</td><td>5-7&deg; BTDC at 950-1050 rpm, vacuum connected</td></tr>
+          <tr><td>Spark plugs</td><td>Champion C6BYC or C6YCC, 0.8 mm gap</td></tr>
+        </table>
+      </div>
+
+      <h2 id="components">Key Components</h2>
+
+      <div class="component-card">
+        <h4>Timing Belt &amp; Tensioner</h4>
+        <div class="component-img-placeholder">[Image: Timing belt layout showing crankshaft sprocket, camshaft sprocket, coolant pump, and tensioner roller]</div>
+        <p><span class="tag tag-tool">Tool: VW 210/220 tensioner pins</span></p>
+        <p>The toothed timing belt drives the camshaft and coolant pump. Tension is set by rotating the coolant pump on its eccentric mount (pre-1985) or via an automatic tensioner (later models).</p>
+        <p><strong>Replacement interval:</strong> Every 40,000 miles (60,000 km) - <strong>CRITICAL</strong>. Always renew idler roller and tensioner at the same time. Belt failure = catastrophic engine damage (interference design).</p>
+        <p><strong>OEM:</strong> VW 026 109 119 / INA 531 0145 10<br>
+        <strong>Aftermarket:</strong> Dayco 94160, Gates 5050, Contitech CT637</p>
+      </div>
+
+      <div class="component-card">
+        <h4>Camshaft</h4>
+        <p>Single overhead camshaft on 8V engines, DOHC on 16V. Driven by toothed belt. Endfloat limit: <strong>0.15 mm</strong>. Run-out at centre bearing: <strong>0.02 mm max</strong>.</p>
+        <p><strong>Location:</strong> Cylinder head, driven by toothed belt from crankshaft sprocket.</p>
+        <p><strong>Inspection:</strong> Check bearing surfaces and cam lobes for wear. Measure lobe height - if worn more than 0.5 mm from specification, renew camshaft and followers together.</p>
+      </div>
+
+      <div class="component-card">
+        <h4>Crankshaft &amp; Bearings</h4>
+        <p>Five-bearing crankshaft with separate thrust washers on centre main bearing (No.3).</p>
+        <h4>Main Journal Specs (1.05 &amp; 1.3L)</h4>
+        <table class="spec-table">
+          <tr><td>Standard diameter</td><td>54.0 mm</td></tr>
+          <tr><td>Undersizes</td><td>53.75, 53.50, 53.25 mm</td></tr>
+          <tr><td>Max endfloat</td><td>0.20 mm</td></tr>
+          <tr><td>Min endfloat</td><td>0.07 mm</td></tr>
+          <tr><td>Max running clearance</td><td>0.17 mm</td></tr>
+        </table>
+        <h4>Big-End / Connecting Rod (1.05 &amp; 1.3L)</h4>
+        <table class="spec-table">
+          <tr><td>Standard crankpin diameter</td><td>42.0 mm</td></tr>
+          <tr><td>Undersizes</td><td>41.75, 41.50, 41.25 mm</td></tr>
+          <tr><td>Max running clearance</td><td>0.095 mm</td></tr>
+          <tr><td>Max endfloat</td><td>0.40 mm</td></tr>
+        </table>
+      </div>
+
+      <h2 id="pistons">Pistons &amp; Rings</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Piston clearance in bore (max)</td><td>0.07 mm</td></tr>
+          <tr><td>Piston clearance in bore (min)</td><td>0.03 mm</td></tr>
+          <tr><td>Standard piston diameter (1.05/1.3L)</td><td>74.98 mm</td></tr>
+          <tr><td>1st oversize</td><td>75.23 mm (+0.25)</td></tr>
+          <tr><td>2nd oversize</td><td>75.48 mm (+0.50)</td></tr>
+          <tr><td>3rd oversize</td><td>75.98 mm (+1.00)</td></tr>
+          <tr><td>Wear limit (10mm from base)</td><td>0.04 mm</td></tr>
+          <tr><td>Ring groove clearance (max)</td><td>0.15 mm</td></tr>
+          <tr><td>Compression ring end gap</td><td>0.30 to 0.45 mm</td></tr>
+          <tr><td>Oil scraper ring end gap</td><td>0.25 to 0.40 mm</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="head">Cylinder Head</h2>
+      <p>Crossflow design with inlet manifold at rear and exhaust at front. Aluminium alloy.</p>
+      <table class="spec-table">
+        <thead><tr><th>Valve Spec (1.05/1.3L)</th><th>Inlet</th><th>Exhaust</th></tr></thead>
+        <tbody>
+          <tr><td>Head diameter</td><td>34.0 mm</td><td>28.1 mm</td></tr>
+          <tr><td>Stem diameter</td><td>7.97 mm</td><td>7.95 mm</td></tr>
+          <tr><td>Standard length</td><td>110.5 mm</td><td>110.5 mm</td></tr>
+          <tr><td>Max rock (in guide, new valve)</td><td>1.0 mm</td><td>1.3 mm</td></tr>
+          <tr><td>Seat angle</td><td>45&deg;</td><td>45&deg;</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Maximum allowable face distortion:</strong> 0.1 mm. If exceeded, head must be skimmed by a specialist. After skimming, valve seats must be re-cut to maintain correct recession.</p>
+      <p><strong>Minimum head height (1.05/1.3L):</strong> 119.3 mm. Do not machine below this dimension.</p>
+
+      <h2 id="lubrication">Lubrication System</h2>
+      <p>Wet sump, pressure feed, full-flow filter. Oil pump is eccentric gear type driven from crankshaft end.</p>
+      <table class="spec-table">
+        <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+        <tbody>
+          <tr><td>System type</td><td>Wet sump, pressure feed, full flow filter</td></tr>
+          <tr><td>Oil pressure (2000 rpm, 80&deg;C)</td><td>2.0 bar minimum</td></tr>
+          <tr><td>Oil filter</td><td>Champion C101/C160 (spin-on)</td></tr>
+          <tr><td>Pump type</td><td>Eccentric gear, crankshaft-driven</td></tr>
+          <tr><td>Oil grade</td><td>SAE 15W/50 or 20W/50 multigrade</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="testing">Testing Procedures</h2>
+
+      <h3>Compression Test</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Run engine to normal operating temperature. Stop engine and remove all spark plugs.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Disconnect HT leads and lay them aside. Disconnect fuel pump relay or injector connector to prevent fuel delivery during cranking.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Fit compression tester to No.1 spark plug hole. Open throttle fully.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Crank engine for 4-6 revolutions. Record highest reading.</p></div></div>
+        <div class="step"><div class="step-number">5</div><div class="step-content"><p>Repeat for all cylinders. Minimum pressure: <strong>7.0 bar</strong> (new: 8-10 bar). Max difference between cylinders: <strong>3.0 bar</strong>.</p></div></div>
+      </div>
+
+      <h3>Oil Pressure Test</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Remove oil pressure sender switch from crankcase (rear of cylinder head on 1.05/1.3L, filter bracket on 1.6/1.8L).</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Fit suitable oil pressure gauge with adapter.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Run engine to normal temperature. Check pressure at 2000 rpm.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p><strong>Pass criterion:</strong> Minimum 2.0 bar at 2000 rpm with oil at 80&deg;C. If below, check oil grade/level first, then investigate pump wear or bearing clearances.</p></div></div>
+      </div>
+
+      <h2 id="torque">Torque Wrench Settings (Nm / lbf ft)</h2>
+      <table class="spec-table">
+        <thead><tr><th>Component</th><th>Nm</th><th>lbf ft</th></tr></thead>
+        <tbody>
+          <tr><td>Cylinder head bolts (Stage 1 / 2 / 3)</td><td>40 / 60 / +180&deg;</td><td>30 / 44 / +180&deg;</td></tr>
+          <tr><td>Main bearing cap bolts</td><td>65</td><td>48</td></tr>
+          <tr><td>Big-end cap nuts (Stage 1 / 2)</td><td>30 / +90&deg;</td><td>22 / +90&deg;</td></tr>
+          <tr><td>Flywheel bolts</td><td>75</td><td>55</td></tr>
+          <tr><td>Clutch bolts</td><td>25</td><td>18</td></tr>
+          <tr><td>Camshaft sprocket bolt</td><td>80</td><td>59</td></tr>
+          <tr><td>Crankshaft sprocket nut</td><td>80</td><td>59</td></tr>
+          <tr><td>Sump bolts</td><td>20</td><td>15</td></tr>
+          <tr><td>Sump drain plug</td><td>30</td><td>22</td></tr>
+          <tr><td>Valve cover</td><td>10</td><td>7</td></tr>
+          <tr><td>Spark plugs (1.05/1.3L)</td><td>20</td><td>15</td></tr>
+          <tr><td>Spark plugs (1.6/1.8L)</td><td>20-25</td><td>15-18</td></tr>
+          <tr><td>Engine to gearbox</td><td>55</td><td>41</td></tr>
+          <tr><td>Roadwheel bolts</td><td>110</td><td>81</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-danger">
+        <div class="callout-title">Critical: Cylinder Head Bolt Procedure</div>
+        <p>Tighten in three stages: 40 Nm, then 60 Nm, then tighten a further 180&deg; (half turn). Bolts are stretch-type <strong>single-use</strong> - always renew. Use new bolts and tighten in the correct sequence (centre outward in spiral pattern). Engine must be cold during tightening.</p>
+      </div>
+
+      <div class="footnote">
+        <p>Source: Haynes Manual 1081, Chapters 2A-2D. Specifications apply to stated engine codes only. <span class="supplement">*Supplemented from technical research</span></p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Workshop Repair Manual Reference. Built from Haynes Manual 1081.</p>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
