@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda HR-V - Fuel & Emissions</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Workshop Manuals</a>
+    <ul class="nav-links" id="navLinks"><li><a href="../../index.html">Home</a></li><li><a href="../">Honda HR-V</a></li><li><a href="fuel.html" class="active">Fuel</a></li></ul>
+    <div class="nav-controls">
+      <div class="search-box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="searchInput" placeholder="Search..."></div>
+      <button class="theme-toggle" id="themeToggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../">Honda HR-V</a> / <span>Fuel & Emissions</span></div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul><li><a href="#overview">Overview</a></li><li><a href="#pgmfi">PGM-FI System</a></li><li><a href="#fuelpump">Fuel Pump</a></li><li><a href="#injectors">Injectors</a></li><li><a href="#throttle">Throttle Body</a></li><li><a href="#evap">EVAP System</a></li><li><a href="#testing">Testing</a></li></ul>
+      <h3>Systems</h3>
+      <ul><li><a href="engine.html">Engine</a></li><li><a href="ignition.html">Ignition</a></li><li><a href="cooling.html">Cooling</a></li><li><a href="transmission.html">Transmission</a></li><li><a href="brakes.html">Brakes</a></li><li><a href="suspension.html">Suspension</a></li><li><a href="electrical.html">Electrical</a></li></ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Fuel & Emissions System</h1>
+      <p>Honda PGM-FI (Programmed Fuel Injection) is a multi-point electronic fuel injection system. Uses sequential port injection with one injector per cylinder. Managed by ECM/PCM (Engine/Powertrain Control Module).</p>
+
+      <h2 id="pgmfi">PGM-FI System Specifications</h2>
+      <table class="spec-table">
+        <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>System type</td><td>Multi-point sequential EFI</td></tr>
+          <tr><td>Fuel pressure (idle)</td><td>260-310 kPa (38-45 psi)</td></tr>
+          <tr><td>Fuel pressure (vacuum hose off)</td><td>320-370 kPa (46-54 psi)</td></tr>
+          <tr><td>Injector resistance</td><td>10-14 ohms at 20&deg;C</td></tr>
+          <tr><td>Idle speed (D16W1, in gear)</td><td>650 +/- 50 rpm (not adjustable)</td></tr>
+          <tr><td>Idle speed (D16W5, in gear)</td><td>680 +/- 50 rpm (not adjustable)</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="fuelpump">Fuel Pump &amp; Relay</h2>
+      <div class="component-card">
+        <h4>Fuel Pump</h4>
+        <p><strong>Location:</strong> Inside fuel tank, accessed via panel under rear seat (left side).<br>
+        <strong>Type:</strong> Electric, turbine-type, immersed in fuel for cooling.<br>
+        <strong>Fuel pressure:</strong> 260-310 kPa at idle.<br>
+        <strong>Electrical:</strong> 12V, fused via PGM-FI main relay.</p>
+
+        <div class="callout callout-warning"><div class="callout-title">Fuel Pump Circuit Note</div>
+        <p>The fuel pump is controlled by the PGM-FI main relay. When ignition is turned ON, the relay runs the pump for 2 seconds to prime, then shuts off until engine is cranking/running. This is a common Honda failure point - if the relay contacts are worn, the pump won't prime or run.</p></div>
+
+        <p><strong>Pressure test:</strong> Connect fuel pressure gauge to service port on fuel rail. Turn ignition ON (do not start). Pressure should reach 260+ kPa within 2 seconds. At idle: 260-310 kPa. With vacuum hose removed from pressure regulator: 320-370 kPa. If pressure is low: suspect pump, filter, or regulator.</p>
+
+        <p><strong>OEM pump:</strong> Honda 17040-S2H-A01<br>
+        <strong>Aftermarket:</strong> Bosch 0 580 313 159, Walbro GCA3350<br>
+        <strong>Filter:</strong> Honda 16010-S2H-A01 (integral with pump assembly)</p>
+      </div>
+
+      <div class="component-card">
+        <h4>PGM-FI Main Relay</h4>
+        <p><strong>Location:</strong> Under-dash fuse/relay box, left side.<br>
+        <strong>Function:</strong> Supplies power to fuel pump, injectors, and ECM.<br>
+        <strong>Common failure:</strong> Solder joints crack on relay PCB. Symptoms: no fuel pump prime, no start, engine stalls intermittently.<br>
+        <strong>Fix:</strong> Resolder all joints on relay board, or replace relay.<br>
+        <strong>OEM:</strong> Honda 39400-S2H-003 (verify against your VIN)</p>
+      </div>
+
+      <h2 id="injectors">Fuel Injectors</h2>
+      <table class="spec-table">
+        <thead><tr><th>Test</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Resistance</td><td>10-14 ohms at 20&deg;C</td></tr>
+          <tr><td>Sound check</td><td>Distinct clicking when operating (use stethoscope)</td></tr>
+          <tr><td>Leak test</td><td>No dripping when pressurised and engine off</td></tr>
+        </tbody>
+      </table>
+      <p><strong>O-ring colour code:</strong> New injectors come with colour-coded O-rings. Always use new O-rings and lubricate with clean engine oil before installation.</p>
+
+      <h2 id="throttle">Throttle Body</h2>
+      <p>Contains throttle valve, Idle Air Control (IAC) valve, and Throttle Position Sensor (TPS). Idle speed is controlled by ECM via IAC valve - not adjustable mechanically.</p>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Remove air intake ducting. Clean throttle bore and plate with throttle body cleaner (not carb cleaner - may damage coatings).</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Check TPS voltage: should be 0.5V at idle, increasing smoothly to 4.5V at WOT.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Check IAC valve resistance: 10-14 ohms. Remove and clean plunger/seat if idle is erratic.</p></div></div>
+      </div>
+
+      <h2 id="evap">EVAP System</h2>
+      <p>Evaporative emission control captures fuel vapours from tank and stores in charcoal canister. Purged to engine under ECM control.</p>
+      <h3>Two-Way Valve Test</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Remove valve from canister. Blow into tank side port: should allow air flow at 0.5-2.5 kPa.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Blow into canister side port: should allow air flow at 5.9-12.7 kPa.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>If valve doesn't open at specified pressures, or leaks in both directions, replace.</p></div></div>
+      </div>
+
+      <h2 id="testing">Diagnostic Trouble Codes (OBD-II)</h2>
+      <p>HR-V uses OBD-II protocol. DTCs can be read with a generic scanner or by counting MIL flashes (early models). Common fuel/emission DTCs:</p>
+      <table class="spec-table">
+        <thead><tr><th>Code</th><th>Meaning</th><th>Common Cause</th></tr></thead>
+        <tbody>
+          <tr><td>P0107</td><td>MAP sensor low voltage</td><td>Vacuum leak, sensor fault, wiring</td></tr>
+          <tr><td>P0117</td><td>ECT sensor low</td><td>Sensor short, connector corrosion</td></tr>
+          <tr><td>P0131</td><td>O2 sensor low voltage</td><td>Lean condition, exhaust leak, sensor aged</td></tr>
+          <tr><td>P0171</td><td>System too lean</td><td>Intake air leak, clogged fuel filter, weak pump</td></tr>
+          <tr><td>P0300-P0304</td><td>Random / cylinder misfire</td><td>Plugs, coils, injectors, compression</td></tr>
+          <tr><td>P0505</td><td>IAC malfunction</td><td>Dirty IAC, vacuum leak, TPS fault</td></tr>
+          <tr><td>P1456</td><td>EVAP leak (tank side)</td><td>Loose fuel cap, leak in tank line</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info"><div class="callout-title">Honda PGM-FI Quick Diagnosis</div>
+      <p><strong>No start:</strong> Listen for 2-second fuel pump prime when ignition turned ON. If no prime, check PGM-FI main relay and fuse. If pump runs but no start, check fuel pressure at rail.<br>
+      <strong>Hard start hot:</strong> Check fuel pressure holding after shutdown (should stay above 150 kPa for 5 min). If pressure drops fast, suspect leaking injector or fuel pressure regulator.<br>
+      <strong>Idle hunt/erratic:</strong> Clean IAC valve and throttle body. Check for vacuum leaks. Check TPS voltage sweep is smooth.</p></div>
+
+      <div class="footnote"><p>Source: Honda HR-V Shop Manual, Chapter 11. <span class="supplement">*Fuel pressure values and DTC data from Honda service information</span></p></div>
+    </main>
+  </div>
+  <footer class="footer"><p>&copy; Workshop Repair Manual Reference.</p></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
