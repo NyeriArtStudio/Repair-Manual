@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda HR-V - Engine Electrical</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../../index.html" class="nav-brand"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Workshop Manuals</a>
+    <ul class="nav-links" id="navLinks"><li><a href="../../index.html">Home</a></li><li><a href="../">Honda HR-V</a></li><li><a href="ignition.html" class="active">Engine Electrical</a></li></ul>
+    <div class="nav-controls">
+      <div class="search-box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="searchInput" placeholder="Search..."></div>
+      <button class="theme-toggle" id="themeToggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </nav>
+
+  <div class="breadcrumbs"><a href="../../index.html">Home</a> / <a href="../">Honda HR-V</a> / <span>Engine Electrical</span></div>
+
+  <div class="two-col">
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul><li><a href="#overview">Overview</a></li><li><a href="#starter">Starter</a></li><li><a href="#ignition">Ignition System</a></li><li><a href="#alternator">Alternator</a></li><li><a href="#sensors">Sensors</a></li><li><a href="#testing">Testing</a></li></ul>
+      <h3>Systems</h3>
+      <ul><li><a href="engine.html">Engine</a></li><li><a href="fuel.html">Fuel</a></li><li><a href="cooling.html">Cooling</a></li><li><a href="transmission.html">Transmission</a></li><li><a href="brakes.html">Brakes</a></li><li><a href="suspension.html">Suspension</a></li><li><a href="electrical.html">Body Electrical</a></li></ul>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="overview">Engine Electrical</h1>
+      <p>12V negative earth. Distributor ignition with external ICM (Ignition Control Module) on D16W1, integrated ICM on D16W5. All engines use OBD-II diagnostics.</p>
+
+      <h2 id="starter">Starting System</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Starter type</td><td>Mitsubishi or Nippondenso reduction gear type</td></tr>
+          <tr><td>Power</td><td>1.0 kW (1.4 kW some markets)</td></tr>
+          <tr><td>Solenoid pull-in voltage</td><td>8.0V minimum at 20&deg;C</td></tr>
+          <tr><td>No-load test</td><td>90A max at 11.0V, 3000+ rpm</td></tr>
+        </tbody>
+      </table>
+
+      <div class="component-card">
+        <h4>Starter Solenoid Test</h4>
+        <p>1. Disconnect ignition coil to prevent starting. 2. Connect voltmeter between solenoid S terminal and earth. 3. Crank engine. Should read battery voltage (12V+). 4. If voltage OK but starter doesn't crank: solenoid or motor faulty.</p>
+        <p><strong>Brush limit:</strong> Minimum length 7.0 mm. <strong>Armature runout:</strong> Max 0.05 mm.</p>
+      </div>
+
+      <h2 id="ignition">Ignition System</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>System type</td><td>Distributor with external ICM (D16W1) / internal ICM (D16W5)</td></tr>
+          <tr><td>Ignition timing (D16W1)</td><td>8-12&deg; BTDC @ 650 rpm (check with SCS connector jumped)</td></tr>
+          <tr><td>Ignition timing (D16W5)</td><td>8-12&deg; BTDC @ 680 rpm (check with SCS connector jumped)</td></tr>
+          <tr><td>Spark plugs</td><td>NGK ZFR6F-11 or Denso KJ20DR-M11</td></tr>
+          <tr><td>Plug gap</td><td>1.1 mm (0.043 in)</td></tr>
+          <tr><td>Plug torque</td><td>18 Nm</td></tr>
+          <tr><td>Plug replacement</td><td>Every 40,000 km (iridium: 80,000 km)</td></tr>
+        </tbody>
+      </table>
+
+      <div class="component-card">
+        <h4>Ignition Coil</h4>
+        <p><strong>Location:</strong> On cylinder head, near distributor.<br>
+        <strong>Primary resistance:</strong> 0.45-0.55 ohms<br>
+        <strong>Secondary resistance:</strong> 16.5-25.0 k&Omega;<br>
+        <strong>Test:</strong> Remove all wires. Measure primary across + and - terminals. Measure secondary between + terminal and tower. Replace if out of spec.</p>
+      </div>
+
+      <div class="component-card">
+        <h4>Ignition Control Module (ICM) - D16W1</h4>
+        <p><strong>Location:</strong> Mounted on distributor body (external).<br>
+        <strong>Function:</strong> Controls ignition coil firing based on CKP sensor signal.<br>
+        <strong>Input test:</strong> With ignition ON: White/Black wire = 12V. Black/Yellow = 12V. White/Blue = signal to coil. Green/White = CKP signal (pulsing while cranking).<br>
+        <strong>Replacement:</strong> Apply heat-sink compound to mating surface.</p>
+      </div>
+
+      <div class="component-card">
+        <h4>CKP/TDC/CYP Sensor (D16W5)</h4>
+        <p>Combined crankshaft position, top dead centre, and cylinder position sensor in distributor. Creates ignition timing signal and cylinder identification.</p>
+        <p><strong>Test:</strong> Measure resistance across sensor terminals. Should be 350-700 ohms. Check for signal output while cranking (AC voltage or oscilloscope).</p>
+      </div>
+
+      <h2 id="alternator">Charging System</h2>
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Alternator type</td><td>Mitsubishi 12V 80A or Denso 12V 70A</td></tr>
+          <tr><td>Regulator type</td><td>IC regulator (internal)</td></tr>
+          <tr><td>Output voltage</td><td>13.5-15.1V at 5000 rpm, all loads on</td></tr>
+          <tr><td>Belt type</td><td>Serpentine ( ribbed)</td></tr>
+          <tr><td>Belt deflection</td><td>5-7 mm under 98N (10 kgf) pressure</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Alternator Test</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Check drivebelt tension and condition.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Measure battery voltage with engine off: 12.4V+ (fully charged).</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Start engine, run at 2000 rpm. Measure battery voltage: should be 13.5-15.1V.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Turn on headlights, heater fan, rear defogger. Voltage should remain above 13.0V. If not, alternator or regulator failing.</p></div></div>
+      </div>
+
+      <h2 id="sensors">Key Engine Sensors</h2>
+      <table class="spec-table">
+        <thead><tr><th>Sensor</th><th>Location</th><th>Test Value</th></tr></thead>
+        <tbody>
+          <tr><td>MAP sensor</td><td>Throttle body</td><td>2.6-3.2V at sea level, ignition ON</td></tr>
+          <tr><td>ECT sensor</td><td>Thermostat housing</td><td>0.1-1.0V at 80&deg;C (approx)</td></tr>
+          <tr><td>IAT sensor</td><td>Intake duct</td><td>2.0-3.0V at 20&deg;C</td></tr>
+          <tr><td>TPS</td><td>Throttle body</td><td>0.5V closed, 4.5V WOT</td></tr>
+          <tr><td>O2 sensor</td><td>Exhaust manifold</td><td>0.1-0.9V cycling at idle (hot)</td></tr>
+          <tr><td>Knock sensor (D16W5)</td><td>Block, cyl 2-3</td><td>Resistance: 500-700 k&Omega;</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="testing">Testing Procedures</h2>
+      <h3>Ignition Timing Check</h3>
+      <div class="procedure">
+        <div class="step"><div class="step-number">1</div><div class="step-content"><p>Connect SCS service connector (brown 2-pin under dash, right side) - use paperclip to jump pins.</p></div></div>
+        <div class="step"><div class="step-number">2</div><div class="step-content"><p>Start engine. Connect timing light to No.1 cylinder.</p></div></div>
+        <div class="step"><div class="step-number">3</div><div class="step-content"><p>Check timing at idle: 8-12&deg; BTDC (red mark on crank pulley). If incorrect, check base timing and distributor installation.</p></div></div>
+        <div class="step"><div class="step-number">4</div><div class="step-content"><p>Disconnect SCS jumper. Timing should advance to 16-24&deg; BTDC (blue mark). If no advance, check ECM and sensor inputs.</p></div></div>
+      </div>
+
+      <div class="callout callout-info"><div class="callout-title">Engine Electrical Quick Diagnosis</div>
+      <p><strong>Crank but no start:</strong> Check for spark (remove plug, ground to engine, crank). No spark: check ICM, CKP sensor, coil. Has spark: check fuel pressure, injector operation.<br>
+      <strong>Hard start cold:</strong> Check coolant temp sensor (ECT), ignition timing.<br>
+      <strong>Engine stalls hot:</strong> Check ICM (thermal failure), main relay (cracked solder), fuel pump relay.<br>
+      <strong>Battery light on:</strong> Check alternator output voltage, drivebelt, battery terminals.</p></div>
+
+      <div class="footnote"><p>Source: Honda HR-V Shop Manual, Chapter 4. <span class="supplement">*Specifications supplemented from Honda service data</span></p></div>
+    </main>
+  </div>
+  <footer class="footer"><p>&copy; Workshop Repair Manual Reference.</p></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
